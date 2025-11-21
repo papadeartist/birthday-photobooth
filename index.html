@@ -9,14 +9,14 @@
 <body>
 
 <div class="main-container">
-    <!-- Background -->
+    <!-- Background web -->
     <img src="assets/background.jpg" class="background" alt="Background">
 
     <!-- Typing text -->
     <div class="typing-text">
-        <div id="line1" class="line">Happy Birthday babi &lt;3</div>
-        <div id="line2" class="line">23/11</div>
-        <div id="line3" class="line" data-text="nếu theo web lần trước thì không vui nữa rồi, lần này em muốn đổi chút, anh đoán xem bấm vào trái tim dưới đây sẽ là gì?"></div>
+        <div class="line1">Happy Birthday babi &lt;3</div>
+        <div class="line2">23/11</div>
+        <div class="line3" data-text="nếu theo web lần trước thì không vui nữa rồi, lần này em muốn đổi chút, anh đoán xem bấm vào trái tim dưới đây sẽ là gì?"></div>
     </div>
 
     <!-- Heart button -->
@@ -26,18 +26,19 @@
 
     <!-- Photobooth -->
     <div class="photobooth-container hidden">
-        <div class="frame-text">Birthday Babe - 23/11</div>
         <video id="video" autoplay playsinline></video>
         <button id="capture">Chụp</button>
-        <div class="photos">
-            <canvas id="photo1"></canvas>
-            <canvas id="photo2"></canvas>
-            <canvas id="photo3"></canvas>
-        </div>
+
+        <!-- Preview khung 3 ảnh -->
+        <canvas id="preview"></canvas>
+
         <button id="save">Lưu ảnh</button>
+        <img src="assets/frame.png" id="frame" alt="Frame" class="hidden">
+
         <div class="stickers">
             <img src="assets/sticker1.png" class="sticker">
             <img src="assets/sticker2.png" class="sticker">
+            <img src="assets/sticker3.png" class="sticker">
         </div>
     </div>
 </div>
