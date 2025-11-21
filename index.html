@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photobooth-container">
+        <img src="assets/background.jpg" class="background" alt="Background">
+        <div class="camera-frame">
+            <video id="video" autoplay playsinline></video>
+            <button id="capture">Chụp</button>
+        </div>
+        <div class="photos">
+            <canvas id="photo1"></canvas>
+            <canvas id="photo2"></canvas>
+            <canvas id="photo3"></canvas>
+        </div>
+        <div class="caption">Chúc mừng sinh nhật!</div>
+        <div class="stickers">
+            <img src="assets/sticker1.png" class="sticker">
+            <img src="assets/sticker2.png" class="sticker">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
