@@ -1,12 +1,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
     background: #000;
-    height: 100%;
 }
 
-.photobooth-container {
+.main-container {
     position: relative;
     width: 360px;
     margin: 20px auto;
@@ -15,17 +15,51 @@ body, html {
 }
 
 .background {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top:0; left:0;
     width: 100%;
     height: 100%;
-    z-index: -1;
     object-fit: cover;
+    z-index: -1;
 }
 
-.camera-frame {
-    position: relative;
+.typing-text {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.line {
+    margin: 10px 0;
+}
+
+.heart-container {
+    margin-top: 20px;
+}
+
+#heart-btn {
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.photobooth-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.frame-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e91e63;
 }
 
 video {
@@ -34,7 +68,7 @@ video {
     border-radius: 10px;
 }
 
-button#capture {
+button {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 18px;
@@ -50,7 +84,6 @@ button#capture {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
 }
 
 canvas {
@@ -60,21 +93,13 @@ canvas {
     background: #222;
 }
 
-.caption {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffeb3b;
-}
-
 .stickers {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .sticker {
     width: 50px;
     height: 50px;
-    margin: 5px;
 }

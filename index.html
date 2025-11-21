@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Photobooth</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Babi</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="photobooth-container">
-        <img src="assets/background.jpg" class="background" alt="Background">
-        <div class="camera-frame">
-            <video id="video" autoplay playsinline></video>
-            <button id="capture">Chụp</button>
-        </div>
+
+<div class="main-container">
+    <!-- Background -->
+    <img src="assets/background.jpg" class="background" alt="Background">
+
+    <!-- Typing text -->
+    <div class="typing-text">
+        <div id="line1" class="line">Happy Birthday babi &lt;3</div>
+        <div id="line2" class="line">23/11</div>
+        <div id="line3" class="line" data-text="nếu theo web lần trước thì không vui nữa rồi, lần này em muốn đổi chút, anh đoán xem bấm vào trái tim dưới đây sẽ là gì?"></div>
+    </div>
+
+    <!-- Heart button -->
+    <div class="heart-container">
+        <button id="heart-btn">❤️</button>
+    </div>
+
+    <!-- Photobooth -->
+    <div class="photobooth-container hidden">
+        <div class="frame-text">Birthday Babe - 23/11</div>
+        <video id="video" autoplay playsinline></video>
+        <button id="capture">Chụp</button>
         <div class="photos">
             <canvas id="photo1"></canvas>
             <canvas id="photo2"></canvas>
             <canvas id="photo3"></canvas>
         </div>
-        <div class="caption">Chúc mừng sinh nhật!</div>
+        <button id="save">Lưu ảnh</button>
         <div class="stickers">
             <img src="assets/sticker1.png" class="sticker">
             <img src="assets/sticker2.png" class="sticker">
         </div>
     </div>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
